@@ -3,7 +3,7 @@
    ========================================================================== */
 :root {
     /* Colors */
-    --color-primary: #ffd800; /* Eagle Fitness Yellow */
+    --color-primary: #ffd800; /* Tom Fitness Yellow */
     --color-primary-dark: #e6c200;
     --color-secondary: #0059ff;
     --color-bg-dark: #121519;
@@ -813,10 +813,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-text-main);
 }
 
-.map-col iframe {
-    border-radius: var(--border-radius-md);
-    filter: grayscale(60%) invert(90%) contrast(80%);
-}
+
 
 .footer-bottom {
     background-color: #000;
@@ -855,14 +852,12 @@ h1, h2, h3, h4, h5, h6 {
     .pricing-card.popular:hover { transform: scale(1.05) translateY(-10px); }
     
     .footer-content { grid-template-columns: 1fr 1fr; }
-    .map-col { grid-column: span 2; }
 }
 
 /* Large Devices (Desktops, 992px and up) */
 @media (min-width: 992px) {
     .hero h1 { font-size: 4.5rem; }
-    .footer-content { grid-template-columns: 1fr 1fr 2fr; }
-    .map-col { grid-column: span 1; }
+    .footer-content { grid-template-columns: 1fr 1fr; }
     
     /* Reveal Desktop Nav */
     .mobile-menu-toggle { display: none; }
