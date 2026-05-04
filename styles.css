@@ -9,23 +9,19 @@
     --color-text-main: #f9fafb;
     --color-text-muted: #abb8c3;
     --color-border: rgba(255, 255, 255, 0.1);
-    
-    
+
     --font-primary: 'Inter', sans-serif;
     --font-secondary: 'Oswald', sans-serif;
-    
-    
+
     --container-max-width: 1200px;
     --section-padding: 5rem 0; 
     --border-radius-sm: 0.5rem; 
     --border-radius-md: 1rem; 
     --border-radius-lg: 1.5rem; 
-    
-    
+
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
 }
-
 
 * {
     margin: 0;
@@ -98,7 +94,6 @@ img {
     text-align: center;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-secondary);
     line-height: 1.2;
@@ -134,7 +129,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 }
 
-
 .section-title h2 {
     font-size: 2rem;
 }
@@ -147,7 +141,6 @@ h1, h2, h3, h4, h5, h6 {
 .bg-accent .section-title p {
     color: rgba(0,0,0,0.7);
 }
-
 
 .btn {
     display: inline-block;
@@ -219,7 +212,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-2px);
 }
 
-
 .header {
     position: fixed;
     top: 0;
@@ -255,7 +247,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     letter-spacing: 1px;
 }
-
 
 .mobile-menu-toggle {
     display: block;
@@ -323,7 +314,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%; 
 }
 
-
 .hero {
     min-height: 100vh;
     display: flex;
@@ -374,50 +364,6 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
 }
 
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); 
-    gap: 1.875rem; 
-}
-
-.service-card {
-    background-color: var(--color-bg-darker);
-    padding: 2.5rem 1.875rem; 
-    border-radius: var(--border-radius-md);
-    border: 1px solid var(--color-border);
-    transition: var(--transition-normal);
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--color-primary);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-}
-
-.service-icon {
-    font-size: 3rem;
-    margin-bottom: 1.25rem; 
-    background: rgba(255, 216, 0, 0.1);
-    width: 5rem; 
-    height: 5rem; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-.service-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.9375rem; 
-}
-
-.service-card p {
-    color: var(--color-text-muted);
-    font-size: 0.95rem;
-}
-
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr)); 
@@ -440,7 +386,6 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
     position: relative;
 }
-
 
 .pricing-cards {
     display: grid;
@@ -528,28 +473,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-
-.table-responsive {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    border-radius: var(--border-radius-md);
-    border: 1px solid var(--color-border);
-}
-
-.schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: var(--color-bg-dark);
-    text-align: center;
-    min-width: 37.5rem; 
-}
-
-.schedule-table th, 
-.schedule-table td {
-    padding: 1.25rem; 
-    border: 1px solid var(--color-border);
-}
-
 .schedule-table th {
     background-color: var(--color-primary);
     color: var(--color-bg-dark);
@@ -578,90 +501,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     padding: 1rem 1.25rem;
 }
-
-
-.trainers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr)); 
-    gap: 2.5rem; 
-}
-
-.trainer-card {
-    background-color: var(--color-bg-dark);
-    border-radius: var(--border-radius-lg);
-    overflow: hidden;
-    border: 1px solid var(--color-border);
-}
-
-.trainer-card img {
-    width: 100%;
-    height: 21.875rem; 
-    object-fit: cover;
-    object-position: top;
-    transition: var(--transition-normal);
-}
-
-.trainer-card:hover img {
-    transform: scale(1.05);
-}
-
-.trainer-info {
-    padding: 1.5625rem; 
-    text-align: center;
-    position: relative;
-    background-color: var(--color-bg-dark);
-    z-index: 2;
-}
-
-.trainer-info h4 {
-    font-size: 1.4rem;
-    margin-bottom: 0.3125rem; 
-}
-
-.trainer-info p {
-    color: var(--color-primary);
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr)); 
-    gap: 1.875rem; 
-}
-
-.testimonial-card {
-    background-color: var(--color-bg-darker);
-    padding: 2.5rem; 
-    border-radius: var(--border-radius-md);
-    border: 1px solid var(--color-border);
-    position: relative;
-}
-
-.client-img {
-    width: 5rem; 
-    height: 5rem; 
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1.25rem; 
-    border: 3px solid var(--color-primary);
-}
-
-.quote {
-    font-style: italic;
-    color: var(--color-text-muted);
-    margin-bottom: 1.25rem; 
-    font-size: 1.05rem;
-}
-
-.testimonial-card h4 {
-    font-size: 1.1rem;
-    margin-bottom: 0;
-    color: var(--color-primary);
-}
-
 
 .cta-section {
     padding: 6.25rem 0; 
@@ -712,7 +551,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     border: none;
 }
-
 
 .footer {
     background-color: #08090a;
@@ -787,8 +625,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-text-main);
 }
 
-
-
 .footer-bottom {
     background-color: #000;
     padding: 1.5625rem 0; 
@@ -797,9 +633,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
 }
 
-
-
-
 @media (min-width: 576px) {
     .hero h1 { font-size: 3.5rem; }
     .hero-actions { flex-direction: row; }
@@ -807,7 +640,6 @@ h1, h2, h3, h4, h5, h6 {
     .form-group { width: auto; }
     .contact-form button { width: auto; flex: 1; }
 }
-
 
 @media (min-width: 768px) {
     .section-title h2 { font-size: 2.5rem; }
@@ -826,12 +658,10 @@ h1, h2, h3, h4, h5, h6 {
     .footer-content { grid-template-columns: 1fr 1fr; }
 }
 
-
 @media (min-width: 992px) {
     .hero h1 { font-size: 4.5rem; }
     .footer-content { grid-template-columns: 1fr 1fr; }
-    
-    
+
     .mobile-menu-toggle { display: none; }
     .main-nav .nav-links {
         position: static;
@@ -845,7 +675,6 @@ h1, h2, h3, h4, h5, h6 {
     }
     .nav-links a.btn { width: auto; }
 }
-
 
 @media (min-width: 1200px) {
     
