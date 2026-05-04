@@ -1,7 +1,9 @@
-
+/* ==========================================================================
+   CSS Variables
+   ========================================================================== */
 :root {
-    
-    --color-primary: #ffd800; 
+    /* Colors */
+    --color-primary: #ffd800; /* Tom Fitness Yellow */
     --color-primary-dark: #e6c200;
     --color-secondary: #0059ff;
     --color-bg-dark: #121519;
@@ -10,23 +12,25 @@
     --color-text-muted: #abb8c3;
     --color-border: rgba(255, 255, 255, 0.1);
     
-    
+    /* Typography */
     --font-primary: 'Inter', sans-serif;
     --font-secondary: 'Oswald', sans-serif;
     
-    
+    /* Spacing & Sizes */
     --container-max-width: 1200px;
-    --section-padding: 5rem 0; 
-    --border-radius-sm: 0.5rem; 
-    --border-radius-md: 1rem; 
-    --border-radius-lg: 1.5rem; 
+    --section-padding: 5rem 0; /* 80px */
+    --border-radius-sm: 0.5rem; /* 8px */
+    --border-radius-md: 1rem; /* 16px */
+    --border-radius-lg: 1.5rem; /* 24px */
     
-    
+    /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
 }
 
-
+/* ==========================================================================
+   Reset & Base Styles
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -35,7 +39,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px; 
+    font-size: 16px; /* Base for rem */
 }
 
 body {
@@ -78,7 +82,7 @@ img {
     width: 100%;
     max-width: var(--container-max-width);
     margin: 0 auto;
-    padding: 0 1.25rem; 
+    padding: 0 1.25rem; /* 20px */
 }
 
 .section-padding {
@@ -98,7 +102,7 @@ img {
     text-align: center;
 }
 
-
+/* Typography Utilities */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-secondary);
     line-height: 1.2;
@@ -126,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-title {
     margin-bottom: 3rem;
-    max-width: 50rem; 
+    max-width: 50rem; /* 800px */
 }
 
 .section-title.text-center {
@@ -134,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 }
 
-
+/* MOBILE FIRST BASE STYLES */
 .section-title h2 {
     font-size: 2rem;
 }
@@ -148,10 +152,12 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(0,0,0,0.7);
 }
 
-
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
 .btn {
     display: inline-block;
-    padding: 0.875rem 2rem; 
+    padding: 0.875rem 2rem; /* 14px 32px */
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -219,7 +225,9 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-2px);
 }
 
-
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
 .header {
     position: fixed;
     top: 0;
@@ -235,17 +243,17 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5rem; 
+    height: 5rem; /* 80px */
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem; 
+    gap: 0.75rem; /* 12px */
 }
 
 .logo img {
-    height: 2.5rem; 
+    height: 2.5rem; /* 40px */
     width: auto;
 }
 
@@ -256,18 +264,18 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 
-
+/* Mobile Menu Base */
 .mobile-menu-toggle {
     display: block;
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0.625rem; 
+    padding: 0.625rem; /* 10px */
 }
 
 .hamburger {
     display: block;
-    width: 1.5rem; 
+    width: 1.5rem; /* 24px */
     height: 2px;
     background-color: var(--color-text-main);
     position: relative;
@@ -288,14 +296,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-nav .nav-links {
     position: fixed;
-    top: 5rem; 
+    top: 5rem; /* 80px */
     left: 0;
     width: 100%;
     background-color: var(--color-bg-dark);
     display: flex;
     flex-direction: column;
-    padding: 1.875rem; 
-    gap: 1.25rem; 
+    padding: 1.875rem; /* 30px */
+    gap: 1.25rem; /* 20px */
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
@@ -323,13 +331,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%; 
 }
 
-
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 6.25rem; 
+    padding-top: 6.25rem; /* 100px */
     text-align: center;
     background-image: url('assets/images/gallery-1.jpg');
     background-size: cover;
@@ -350,7 +360,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 43.75rem; 
+    max-width: 43.75rem; /* 700px */
     margin: 0 auto;
 }
 
@@ -364,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.25rem;
     color: var(--color-text-muted);
     margin-bottom: 2.5rem;
-    max-width: 37.5rem; 
+    max-width: 37.5rem; /* 600px */
 }
 
 .hero-actions {
@@ -374,16 +384,18 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
 }
 
-
+/* ==========================================================================
+   Services
+   ========================================================================== */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); 
-    gap: 1.875rem; 
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* 250px */
+    gap: 1.875rem; /* 30px */
 }
 
 .service-card {
     background-color: var(--color-bg-darker);
-    padding: 2.5rem 1.875rem; 
+    padding: 2.5rem 1.875rem; /* 40px 30px */
     border-radius: var(--border-radius-md);
     border: 1px solid var(--color-border);
     transition: var(--transition-normal);
@@ -397,10 +409,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .service-icon {
     font-size: 3rem;
-    margin-bottom: 1.25rem; 
+    margin-bottom: 1.25rem; /* 20px */
     background: rgba(255, 216, 0, 0.1);
-    width: 5rem; 
-    height: 5rem; 
+    width: 5rem; /* 80px */
+    height: 5rem; /* 80px */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -409,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .service-card h3 {
     font-size: 1.25rem;
-    margin-bottom: 0.9375rem; 
+    margin-bottom: 0.9375rem; /* 15px */
 }
 
 .service-card p {
@@ -417,16 +429,18 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.95rem;
 }
 
-
+/* ==========================================================================
+   Gallery
+   ========================================================================== */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr)); 
-    gap: 1.25rem; 
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr)); /* 300px */
+    gap: 1.25rem; /* 20px */
 }
 
 .gallery-img {
     width: 100%;
-    height: 18.75rem; 
+    height: 18.75rem; /* 300px */
     object-fit: cover;
     border-radius: var(--border-radius-sm);
     transition: var(--transition-normal);
@@ -441,19 +455,21 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-
+/* ==========================================================================
+   Pricing
+   ========================================================================== */
 .pricing-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr)); 
-    gap: 1.875rem; 
-    margin-top: 2.5rem; 
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr)); /* 300px */
+    gap: 1.875rem; /* 30px */
+    margin-top: 2.5rem; /* 40px */
 }
 
 .pricing-card {
     background-color: var(--color-bg-darker);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-lg);
-    padding: 3.125rem 2.5rem; 
+    padding: 3.125rem 2.5rem; /* 50px 40px */
     text-align: center;
     position: relative;
     transition: var(--transition-normal);
@@ -465,12 +481,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .pricing-card.popular {
     border-color: var(--color-primary);
-    transform: none; 
+    transform: none; /* Scale disabled on mobile */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .pricing-card.popular:hover {
-    transform: translateY(-10px); 
+    transform: translateY(-10px); /* Just hover on mobile */
 }
 
 .badge {
@@ -480,8 +496,8 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(-50%, -50%);
     background-color: var(--color-primary);
     color: var(--color-bg-dark);
-    padding: 0.3125rem 0.9375rem; 
-    border-radius: 1.25rem; 
+    padding: 0.3125rem 0.9375rem; /* 5px 15px */
+    border-radius: 1.25rem; /* 20px */
     font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -491,22 +507,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .pricing-card h3 {
     font-size: 1.8rem;
-    margin-bottom: 0.625rem; 
+    margin-bottom: 0.625rem; /* 10px */
 }
 
 .pricing-desc {
     color: var(--color-text-muted);
-    margin-bottom: 1.875rem; 
+    margin-bottom: 1.875rem; /* 30px */
     font-size: 0.9rem;
 }
 
 .features {
     text-align: left;
-    margin-bottom: 2.5rem; 
+    margin-bottom: 2.5rem; /* 40px */
 }
 
 .features li {
-    padding: 0.75rem 0; 
+    padding: 0.75rem 0; /* 12px 0 */
     border-bottom: 1px solid var(--color-border);
     font-weight: 500;
 }
@@ -528,7 +544,9 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-
+/* ==========================================================================
+   Schedule Table
+   ========================================================================== */
 .table-responsive {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -541,12 +559,12 @@ h1, h2, h3, h4, h5, h6 {
     border-collapse: collapse;
     background-color: var(--color-bg-dark);
     text-align: center;
-    min-width: 37.5rem; 
+    min-width: 37.5rem; /* 600px */
 }
 
 .schedule-table th, 
 .schedule-table td {
-    padding: 1.25rem; 
+    padding: 1.25rem; /* 20px */
     border: 1px solid var(--color-border);
 }
 
@@ -579,11 +597,13 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem 1.25rem;
 }
 
-
+/* ==========================================================================
+   Trainers
+   ========================================================================== */
 .trainers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr)); 
-    gap: 2.5rem; 
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr)); /* 280px */
+    gap: 2.5rem; /* 40px */
 }
 
 .trainer-card {
@@ -595,7 +615,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .trainer-card img {
     width: 100%;
-    height: 21.875rem; 
+    height: 21.875rem; /* 350px */
     object-fit: cover;
     object-position: top;
     transition: var(--transition-normal);
@@ -606,7 +626,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .trainer-info {
-    padding: 1.5625rem; 
+    padding: 1.5625rem; /* 25px */
     text-align: center;
     position: relative;
     background-color: var(--color-bg-dark);
@@ -615,7 +635,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .trainer-info h4 {
     font-size: 1.4rem;
-    margin-bottom: 0.3125rem; 
+    margin-bottom: 0.3125rem; /* 5px */
 }
 
 .trainer-info p {
@@ -625,34 +645,36 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-
+/* ==========================================================================
+   Testimonials
+   ========================================================================== */
 .testimonial-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr)); 
-    gap: 1.875rem; 
+    grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr)); /* 350px */
+    gap: 1.875rem; /* 30px */
 }
 
 .testimonial-card {
     background-color: var(--color-bg-darker);
-    padding: 2.5rem; 
+    padding: 2.5rem; /* 40px */
     border-radius: var(--border-radius-md);
     border: 1px solid var(--color-border);
     position: relative;
 }
 
 .client-img {
-    width: 5rem; 
-    height: 5rem; 
+    width: 5rem; /* 80px */
+    height: 5rem; /* 80px */
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1.25rem; 
+    margin-bottom: 1.25rem; /* 20px */
     border: 3px solid var(--color-primary);
 }
 
 .quote {
     font-style: italic;
     color: var(--color-text-muted);
-    margin-bottom: 1.25rem; 
+    margin-bottom: 1.25rem; /* 20px */
     font-size: 1.05rem;
 }
 
@@ -662,9 +684,11 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-primary);
 }
 
-
+/* ==========================================================================
+   CTA / Contact Form
+   ========================================================================== */
 .cta-section {
-    padding: 6.25rem 0; 
+    padding: 6.25rem 0; /* 100px */
 }
 
 .cta-section h2 {
@@ -680,11 +704,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-form {
-    max-width: 37.5rem; 
+    max-width: 37.5rem; /* 600px */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 0.9375rem; 
+    gap: 0.9375rem; /* 15px */
 }
 
 .form-group {
@@ -694,7 +718,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-form input {
     width: 100%;
-    padding: 1rem 1.25rem; 
+    padding: 1rem 1.25rem; /* 16px 20px */
     border-radius: 50px;
     border: 1px solid rgba(0,0,0,0.2);
     font-family: var(--font-primary);
@@ -713,38 +737,40 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
 }
 
-
+/* ==========================================================================
+   Footer
+   ========================================================================== */
 .footer {
     background-color: #08090a;
-    padding-top: 5rem; 
+    padding-top: 5rem; /* 80px */
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3.125rem; 
-    margin-bottom: 3.75rem; 
+    gap: 3.125rem; /* 50px */
+    margin-bottom: 3.75rem; /* 60px */
 }
 
 .brand-col .footer-logo {
-    height: 3.125rem; 
-    margin-bottom: 1.25rem; 
+    height: 3.125rem; /* 50px */
+    margin-bottom: 1.25rem; /* 20px */
 }
 
 .brand-col p {
     color: var(--color-text-muted);
     font-size: 0.95rem;
-    margin-bottom: 1.5625rem; 
+    margin-bottom: 1.5625rem; /* 25px */
 }
 
 .social-links {
     display: flex;
-    gap: 0.9375rem; 
+    gap: 0.9375rem; /* 15px */
 }
 
 .social-links a {
-    width: 2.5rem; 
-    height: 2.5rem; 
+    width: 2.5rem; /* 40px */
+    height: 2.5rem; /* 40px */
     border-radius: 50%;
     background-color: var(--color-bg-dark);
     display: flex;
@@ -762,9 +788,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-col h3 {
     font-size: 1.25rem;
-    margin-bottom: 1.5625rem; 
+    margin-bottom: 1.5625rem; /* 25px */
     position: relative;
-    padding-bottom: 0.625rem; 
+    padding-bottom: 0.625rem; /* 10px */
 }
 
 .footer-col h3::after {
@@ -772,13 +798,13 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 2.5rem; 
+    width: 2.5rem; /* 40px */
     height: 2px;
     background-color: var(--color-primary);
 }
 
 .contact-info li {
-    margin-bottom: 0.9375rem; 
+    margin-bottom: 0.9375rem; /* 15px */
     color: var(--color-text-muted);
     font-size: 0.95rem;
 }
@@ -791,15 +817,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-bottom {
     background-color: #000;
-    padding: 1.5625rem 0; 
+    padding: 1.5625rem 0; /* 25px */
     text-align: center;
     color: var(--color-text-muted);
     font-size: 0.9rem;
 }
 
+/* ==========================================================================
+   Media Queries (MOBILE FIRST - Scaling Up)
+   ========================================================================== */
 
-
-
+/* Small Devices (Landscape Phones, 576px and up) */
 @media (min-width: 576px) {
     .hero h1 { font-size: 3.5rem; }
     .hero-actions { flex-direction: row; }
@@ -808,12 +836,12 @@ h1, h2, h3, h4, h5, h6 {
     .contact-form button { width: auto; flex: 1; }
 }
 
-
+/* Medium Devices (Tablets, 768px and up) */
 @media (min-width: 768px) {
     .section-title h2 { font-size: 2.5rem; }
     
     .hero { 
-        padding-top: 5rem; 
+        padding-top: 5rem; /* 80px */
         text-align: left; 
     }
     
@@ -826,12 +854,12 @@ h1, h2, h3, h4, h5, h6 {
     .footer-content { grid-template-columns: 1fr 1fr; }
 }
 
-
+/* Large Devices (Desktops, 992px and up) */
 @media (min-width: 992px) {
     .hero h1 { font-size: 4.5rem; }
     .footer-content { grid-template-columns: 1fr 1fr; }
     
-    
+    /* Reveal Desktop Nav */
     .mobile-menu-toggle { display: none; }
     .main-nav .nav-links {
         position: static;
@@ -846,7 +874,7 @@ h1, h2, h3, h4, h5, h6 {
     .nav-links a.btn { width: auto; }
 }
 
-
+/* Extra Large Devices (Large Desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    
+    /* Optional: Fine tune layout on very wide screens */
 }
